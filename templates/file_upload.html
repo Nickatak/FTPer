@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Upload your file</title>
+        <script src="{{ url_for('static', filename='uploader.js') }}"></script>
+    </head>
+
+    <body>
+        <form action="{{ url_for('file_view', file_uuid=file.id) }}" method='POST' enctype="multipart/form-data">
+            <label for="file_upload">File:</label><input type="file" name="file_upload">
+            <button type-"submit">Upload!</button>
+        </form>
+    </body>
+</html>

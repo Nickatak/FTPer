@@ -1,0 +1,11 @@
+venv/
+htmlcov/
+
+*.pyc
+__pycache__/
+
+*.db
+
+*.ps1
+
+downloads/

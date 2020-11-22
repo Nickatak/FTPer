@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Upload your file</title>
+        <script src="{{ url_for('static', filename='uploader.js') }}"></script>
+    </head>
+
+    <body>
+        <div>Share your file with your URL: {{ url_for('serve_file', file_uuid=file.id) }}</div>
+    </body>
+</html>
