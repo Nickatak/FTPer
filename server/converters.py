@@ -1,3 +1,5 @@
+"""UUID Converter class for flask's URL-converters."""
+
 import re
 from uuid import UUID
 
