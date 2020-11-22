@@ -4,7 +4,7 @@ from bot.types import Path
 
 
 BASE_DIR: Path = pathlib.Path(__file__).parent
-DOMAIN_NAME: str = 'localhost:5000'
+DOMAIN_NAME: str = ''
 TEMPLATE_DIR: Path = BASE_DIR.joinpath('templates')
 UPLOAD_DIR: Path = BASE_DIR.joinpath('downloads')
 # Discord settings.
