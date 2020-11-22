@@ -1,3 +1,4 @@
+"""SQLAlchemy models for our server to interact with PostgreSQL."""
 import datetime
 import uuid
 
@@ -8,8 +9,7 @@ from sqlalchemy.ext.declarative import declarative_base #type: ignore
 from sqlalchemy.orm import relationship #type: ignore
 
 from conf import DB_URL
-from bot.types import DeclarativeMeta, Message
-
+from server.types import DeclarativeMeta
 
 Base: DeclarativeMeta = declarative_base()
 

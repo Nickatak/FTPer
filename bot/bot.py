@@ -1,3 +1,5 @@
+"""Main Bot class file."""
+
 import discord #type: ignore
 from typing import Union
 

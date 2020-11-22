@@ -1,0 +1,1 @@
+from sqlalchemy.ext.declarative.api import DeclarativeMeta #type: ignore

@@ -1,8 +1,10 @@
+"""SQLAlchemy declarative models for our bot to interact with PostgreSQL.  This file also includes a DBManager helper-class to keep a reference to SQLAlchemy's session."""
+
 import datetime
 import uuid
 
 import sqlalchemy #type: ignore
-from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, Numeric, String
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Numeric, String
 from sqlalchemy.dialects.postgresql import UUID as psUUID #type: ignore
 from sqlalchemy.ext.declarative import declarative_base #type: ignore
 from sqlalchemy.orm import relationship #type: ignore

@@ -1,4 +1,5 @@
-from pathlib import Path
+"""Aggregate file for different base-classes to enable typehints."""
+
 from uuid import UUID
 
 from discord import Message #type: ignore

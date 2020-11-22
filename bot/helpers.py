@@ -1,3 +1,4 @@
+"""Miscellaenous helpers (mostly URL-builders)."""
 import os
 
 from bot.types import UUID
