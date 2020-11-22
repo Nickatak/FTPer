@@ -9,3 +9,6 @@ __pycache__/
 *.ps1
 
 downloads/
+
+# I'm going to ignore this for now, so I can update the config manually later on as I keep developing.
+conf.py
