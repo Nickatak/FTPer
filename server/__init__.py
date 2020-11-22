@@ -18,7 +18,7 @@ app.url_map.converters['uuid'] = UUIDConverter
 db: DBManager = DBManager()
 
 @app.route('/<uuid:file_uuid>', methods=['GET', 'POST'])
-def file_view(file_uuid: UUID) -> Union[str, Response]:
+def upload_file(file_uuid: UUID) -> Union[str, Response]:
     """View for uploading files.
             :file_uuid: UUID of the file that we're uploading.
     """
@@ -54,7 +54,7 @@ def serve_file(file_uuid) -> Union[str, Response]:
     if file is None:
         return render_template('404.html')
     elif not file.completed:
-        return redirect(url_for('file_view', file_uuid=file_uuid))
+        return redirect(url_for('upload_file', file_uuid=file_uuid))
 
     file_path: Path = BASE_DIR.joinpath('downloads', '{}{}'.format(file_uuid.hex, file.ext))
     return send_file(file_path)
