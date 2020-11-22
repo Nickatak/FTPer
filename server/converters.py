@@ -7,7 +7,7 @@ from werkzeug.routing import BaseConverter, ValidationError
 
 class UUIDConverter(BaseConverter):
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs) -> None:
         """Custom UUID converter class.
             So we can use it in Flask routes like this:
                 @app.route('/arbitrary/<uuid:capture_name>')
