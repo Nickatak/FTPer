@@ -1,8 +1,8 @@
 import re
+from uuid import UUID
 
 from werkzeug.routing import BaseConverter, ValidationError
 
-from server.types import UUID
 
 
 class UUIDConverter(BaseConverter):
