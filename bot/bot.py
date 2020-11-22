@@ -3,7 +3,7 @@ from typing import Union
 
 from bot.helpers import cleanup_file, construct_download_link, construct_upload_link
 from bot.types import DMChannel, Message, TextChannel
-from server.models import DBManager, File, User
+from bot.models import DBManager, File, User
 
 
 class Bot(discord.Client):
